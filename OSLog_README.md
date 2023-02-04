@@ -17,8 +17,7 @@
     logger. log( "Paid with bank account \ (accountNumber)")
  `
  
-output in console would be: 
-Time                  process      message
+output in console: 
 09:41:00-868918-0700  YourBundeId  Paid with bank account <private>
 
 
@@ -27,8 +26,7 @@ Time                  process      message
     logger. log("Ordered smoothie \ (smoothieName, privacy: .public)")
  `
  
-output in console would be: 
-Time                  process      message
+output in console:
 09:41:00-868918-0700  YourBundeId  Ordered smoothie blueberry
 
  ###  Retrieving logs from archive
