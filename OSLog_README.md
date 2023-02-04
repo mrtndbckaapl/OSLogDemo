@@ -1,4 +1,4 @@
-#  OSLog usage:
+# OSLog usage:
 
 ### 1) creation of logger and simple log:
 
