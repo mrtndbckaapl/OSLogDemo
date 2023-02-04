@@ -1,4 +1,4 @@
-#   `#FFA500`OSLog usage
+#  OSLog usage:
 
 ### 1) creation of logger and simple log:
 
@@ -33,7 +33,7 @@
  ###  4) syntax for logging error message:
  `logger.error( "invalid token with id: \(tokenIdString)")`
  
-  ###  syntax for logging fault message:
+  ### 5) syntax for logging fault message:
  `logger.fault( "invalid token with id: \(tokenIdString)")`
 
  ##  Retrieving logs from archive example:
