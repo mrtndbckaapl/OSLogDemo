@@ -17,7 +17,7 @@
     logger.log( "Paid with bank account \ (accountNumber)")
  `
  
-*** output in console: *** 
+***output in console:*** 
 > 09:41:00-868918-0700  YourBundeId  Paid with bank account \<private\>
 
 - hence `accountNumber` is of `String` Type (nonnumeric), the value is private when used on realease builds. 
@@ -27,7 +27,7 @@
  ###  logging any CustomStringConvertible, where non-numeric types are publicly seen:
  `logger.log("Ordered smoothie \ (smoothieName, privacy: .public)")`
  
-*** output in console ***
+***output in console***
 > 09:41:00-868918-0700  YourBundeId  Ordered smoothie blueberry
 
  ###  syntax for logging error message:
