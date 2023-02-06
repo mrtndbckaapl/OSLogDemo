@@ -1,5 +1,6 @@
 # OSLog usage:
 
+### Minimum deployment: `os` library available iOS 14+ , `OSLogStore` library available iOS 15+
 ### 1) creation of logger and simple log:
 
 ```
@@ -36,11 +37,13 @@
   ### 5) syntax for logging fault message:
  `logger.fault( "invalid token with id: \(tokenIdString)")`
 
- ##  Retrieving logs from archive example:
+ ##  Retrieving logs :
+ 
+ ###  a) Retrieving logs from archive example:
 
   `sudo log collect --device-name="Martin’s iPhone" --start '2023-01-05 07:28:00' --output OSLogDemo.logarchive`
   
-  ### Retrieving logs withing app:
+  ###  b) Retrieving logs withing app:
 ```
 import OSLog
 
@@ -63,7 +66,10 @@ class LogStore {
 
 
  
- ## Source: [WWDC 2020 Video](https://developer.apple.com/videos/play/wwdc2020/10168/)
+## Source1: [WWDC 2020 Video](https://developer.apple.com/videos/play/wwdc2020/10168/)
+## Source2: [CocoaHeads Berlin Video](https://www.youtube.com/watch?v=oHxxkWhOSK0)
+## Source3: [OSLog Documentation](https://developer.apple.com/documentation/oslog)
+## Source4: [OSLogStore Documentation](https://developer.apple.com/documentation/oslog/oslogstore)
  
  
  
