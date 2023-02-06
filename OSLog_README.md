@@ -39,6 +39,27 @@
  ##  Retrieving logs from archive example:
 
   `sudo log collect --device-name="Martin’s iPhone" --start '2023-01-05 07:28:00' --output OSLogDemo.logarchive`
+  
+  ### Retrieving logs withing app:
+```
+import OSLog
+
+class LogStore {
+    func retrieveLogs() -> [String] {
+        let logStore = try! OSLogStore(scope: .currentProcessIdentifier)
+        let yesterday = Date().addingTimeInterval(-3600 * 24)
+        let timeFrame = logStore.position(date: yesterday)
+        let allEntries = try! logStore.getEntries(at: timeFrame)
+        let logMessages: [String] = allEntries.compactMap { entry in
+            return [entry.date.formatted(),
+                    entry.storeCategory.rawValue.formatted(),
+                    entry.composedMessage]
+                .joined(separator: " ")
+        }
+        return logMessages
+    }
+}
+```
 
 
  
