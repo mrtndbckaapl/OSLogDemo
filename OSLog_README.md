@@ -1,6 +1,6 @@
 # OSLog usage:
 
-### Minimum deployment: `os` library available iOS 14+ , `OSLogStore` library available iOS 15+
+### Minimum deployment: `os` library available iOS 14+ , `OSLog` library available iOS 15+
 ### 1) creation of logger and simple log:
 
 ```
