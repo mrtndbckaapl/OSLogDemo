@@ -68,8 +68,8 @@ class LogStore {
  
 ## Source1: [WWDC 2020 Video](https://developer.apple.com/videos/play/wwdc2020/10168/)
 ## Source2: [CocoaHeads Berlin Video](https://www.youtube.com/watch?v=oHxxkWhOSK0)
-## Source3: [OSLog Documentation](https://developer.apple.com/documentation/oslog)
-## Source4: [OSLogStore Documentation](https://developer.apple.com/documentation/oslog/oslogstore)
+## Source3: [Logging with os Documentation](https://developer.apple.com/documentation/os/logging/generating_log_messages_from_your_code)
+## Source4: [OSLog Documentation](https://developer.apple.com/documentation/oslog)
  
  
  
